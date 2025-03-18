@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Data Entry</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+</head>
+<body>
+    <h1>Tracking Number Entry</h1>
+    <form id="trackingForm">
+        <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter Tracking Number" />
+        <button type="submit">Submit</button>
+    </form>
+    <table id="trackingTable" class="display">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tracking Number</th>
+                <th>Submitted At</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#trackingTable').DataTable({
+                ajax: {
+                    url: '/Tracking/GetTrackingNumbers',
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: 'id' },
+                    { data: 'number' },
+                    { data: 'submittedAt' }
+                ]
+            });
+
+             $('#trackingForm').submit(function (e) {
+            e.preventDefault();
+            var trackingNumber = $('#trackingNumber').val();
+            $.ajax({
+                type: 'POST',
+                url: '/Tracking/SaveTrackingNumber',
+                data: { trackingNumber: trackingNumber },
+                success: function (response) {
+                    if (response.status === "notFound") {
+                        alert(response.message); // Notify that the tracking number does not exist
+                    } else if (response.status === "success") {
+                        table.ajax.reload(); // Reload the table
+                        alert(response.message); // Notify successful save
+                    } else {
+                        alert(response.message); // Handle other errors
+                    }
+                }
+            });
+        });
+        });
+    </script>
+</body>
+</html>

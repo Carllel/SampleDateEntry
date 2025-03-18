@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D0DA9A-6731-4205-B069-B4A7F5499BCC}|dataEntrySampleProj\\dataEntrySampleProj.csproj|c:\\users\\cc9853\\source\\repos\\dataentrysampleproj\\dataentrysampleproj\\views\\tracking\\dataentry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1D0DA9A-6731-4205-B069-B4A7F5499BCC}|dataEntrySampleProj\\dataEntrySampleProj.csproj|solutionrelative:dataentrysampleproj\\views\\tracking\\dataentry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D0DA9A-6731-4205-B069-B4A7F5499BCC}|dataEntrySampleProj\\dataEntrySampleProj.csproj|c:\\users\\cc9853\\source\\repos\\dataentrysampleproj\\dataentrysampleproj\\controllers\\trackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D0DA9A-6731-4205-B069-B4A7F5499BCC}|dataEntrySampleProj\\dataEntrySampleProj.csproj|solutionrelative:dataentrysampleproj\\controllers\\trackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D0DA9A-6731-4205-B069-B4A7F5499BCC}|dataEntrySampleProj\\dataEntrySampleProj.csproj|c:\\users\\cc9853\\source\\repos\\dataentrysampleproj\\dataentrysampleproj\\models\\trackingnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D0DA9A-6731-4205-B069-B4A7F5499BCC}|dataEntrySampleProj\\dataEntrySampleProj.csproj|solutionrelative:dataentrysampleproj\\models\\trackingnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrackingNumber.cs",
+              "DocumentMoniker": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\dataEntrySampleProj\\Models\\TrackingNumber.cs",
+              "RelativeDocumentMoniker": "dataEntrySampleProj\\Models\\TrackingNumber.cs",
+              "ToolTip": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\dataEntrySampleProj\\Models\\TrackingNumber.cs",
+              "RelativeToolTip": "dataEntrySampleProj\\Models\\TrackingNumber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:57:34.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dataEntry.cshtml",
+              "DocumentMoniker": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\dataEntrySampleProj\\Views\\Tracking\\dataEntry.cshtml",
+              "RelativeDocumentMoniker": "dataEntrySampleProj\\Views\\Tracking\\dataEntry.cshtml",
+              "ToolTip": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\dataEntrySampleProj\\Views\\Tracking\\dataEntry.cshtml",
+              "RelativeToolTip": "dataEntrySampleProj\\Views\\Tracking\\dataEntry.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowD4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T00:39:27.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrackingController.cs",
+              "DocumentMoniker": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\dataEntrySampleProj\\Controllers\\TrackingController.cs",
+              "RelativeDocumentMoniker": "dataEntrySampleProj\\Controllers\\TrackingController.cs",
+              "ToolTip": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\dataEntrySampleProj\\Controllers\\TrackingController.cs",
+              "RelativeToolTip": "dataEntrySampleProj\\Controllers\\TrackingController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:36:28.213Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
