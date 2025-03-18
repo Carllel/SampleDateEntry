@@ -8,26 +8,51 @@
     <meta name="viewport" content="width=device-width" />
     <title>Data Entry</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 </head>
 <body>
-    <h1>Tracking Number Entry</h1>
-    <form id="trackingForm">
-        <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter Tracking Number" />
-        <button type="submit">Submit</button>
-    </form>
-    <table id="trackingTable" class="display">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Tracking Number</th>
-                <th>Submitted At</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <div class="container mt-5">
+        <h1>Tracking Number Entry</h1>
+        <!-- Button to trigger modal -->
+        <button class="btn btn-primary" data-toggle="modal" data-target="#trackingModal">Add Tracking Number</button>
+        <table id="trackingTable" class="display mt-3">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tracking Number</th>
+                    <th>Submitted At</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="trackingModal" tabindex="-1" role="dialog" aria-labelledby="trackingModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="trackingModalLabel">Enter Tracking Number</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="trackingForm">
+                        <div class="form-group">
+                            <label for="trackingNumber">Tracking Number</label>
+                            <input type="text" class="form-control" id="trackingNumber" name="trackingNumber" placeholder="Enter Tracking Number" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
             var table = $('#trackingTable').DataTable({
@@ -42,25 +67,26 @@
                 ]
             });
 
-             $('#trackingForm').submit(function (e) {
-            e.preventDefault();
-            var trackingNumber = $('#trackingNumber').val();
-            $.ajax({
-                type: 'POST',
-                url: '/Tracking/SaveTrackingNumber',
-                data: { trackingNumber: trackingNumber },
-                success: function (response) {
-                    if (response.status === "notFound") {
-                        alert(response.message); // Notify that the tracking number does not exist
-                    } else if (response.status === "success") {
-                        table.ajax.reload(); // Reload the table
-                        alert(response.message); // Notify successful save
-                    } else {
-                        alert(response.message); // Handle other errors
+            $('#trackingForm').submit(function (e) {
+                e.preventDefault();
+                var trackingNumber = $('#trackingNumber').val();
+                $.ajax({
+                    type: 'POST',
+                    url: '/Tracking/SaveTrackingNumber',
+                    data: { trackingNumber: trackingNumber },
+                    success: function (response) {
+                        if (response.status === "notFound") {
+                            alert(response.message); // Notify that the tracking number does not exist
+                        } else if (response.status === "success") {
+                            table.ajax.reload(); // Reload the table
+                            alert(response.message); // Notify successful save
+                        } else {
+                            alert(response.message); // Handle other errors
+                        }
+                        $('#trackingModal').modal('hide'); // Close the modal after submission
                     }
-                }
+                });
             });
-        });
         });
     </script>
 </body>

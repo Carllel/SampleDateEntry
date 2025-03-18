@@ -46,8 +46,7 @@
               "RelativeToolTip": "dataEntrySampleProj\\Models\\TrackingNumber.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T00:57:34.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T00:57:34.981Z"
             },
             {
               "$type": "Document",
@@ -57,7 +56,7 @@
               "RelativeDocumentMoniker": "dataEntrySampleProj\\Views\\Tracking\\dataEntry.cshtml",
               "ToolTip": "C:\\Users\\CC9853\\source\\repos\\dataEntrySampleProj\\dataEntrySampleProj\\Views\\Tracking\\dataEntry.cshtml",
               "RelativeToolTip": "dataEntrySampleProj\\Views\\Tracking\\dataEntry.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBgAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwC8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-18T00:39:27.694Z",
               "EditorCaption": ""
@@ -72,8 +71,7 @@
               "RelativeToolTip": "dataEntrySampleProj\\Controllers\\TrackingController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T00:36:28.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T00:36:28.213Z"
             }
           ]
         }

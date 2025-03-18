@@ -80,3 +80,4 @@ C:\Users\CC9853\source\repos\dataEntrySampleProj\dataEntrySampleProj\obj\Debug\n
 C:\Users\CC9853\source\repos\dataEntrySampleProj\dataEntrySampleProj\obj\Debug\net8.0\dataEntrySampleProj.pdb
 C:\Users\CC9853\source\repos\dataEntrySampleProj\dataEntrySampleProj\obj\Debug\net8.0\dataEntrySampleProj.genruntimeconfig.cache
 C:\Users\CC9853\source\repos\dataEntrySampleProj\dataEntrySampleProj\obj\Debug\net8.0\ref\dataEntrySampleProj.dll
+C:\Users\CC9853\source\repos\dataEntrySampleProj\dataEntrySampleProj\obj\Debug\net8.0\dataEntrySampleProj.sourcelink.json
